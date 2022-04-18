@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Encriptador</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <h1>Encriptador</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://github.com/jaovitm">Github</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <main>
+        <div id="div">
+            <h1 class="title">Informe a Frase</h1>
+            <h1 class="title">Resultado</h1>
+        </div>
+        <div id="input">
+            <textarea id="texto" placeholder="Digite seu texto aqui"></textarea>
+            <textarea id="resposta" placeholder="..."></textarea>
+        </div>
+        <div id="commands">
+            <button onclick="criptografar()" id="criptografar"> <img src="./lock-fill.svg" alt="" srcset=""> CRIPTOGRAFAR</button>
+            <button onclick="descriptografar()" id="descriptografar"><img src="./unlock-fill.svg" alt="" srcset=""> DESCRIPTOGRAFAR</button> <button onclick="copy()" id="copiar"><img src="./clipboard2.svg" alt="" srcset="">COPIAR ULTIMA RESPOSTA</button>
+        </div>
+    </main>
+    <footer>
+        <p>João Vitor Machado &copy</p>
+        
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+</html>
