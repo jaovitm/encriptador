@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     
     <title>Encriptador</title>
 </head>
@@ -27,19 +27,32 @@
             <h1 class="title">Resultado</h1>
         </div>
         <div id="input">
-            <textarea id="texto" placeholder="Digite seu texto aqui"></textarea>
+            <textarea id="texto" placeholder="Digite seu texto aqui em minusculo e sem acento"></textarea>
             <textarea id="resposta" placeholder="..."></textarea>
         </div>
         <div id="commands">
             <button onclick="criptografar()" id="criptografar"> <img src="./lock-fill.svg" alt="" srcset=""> CRIPTOGRAFAR</button>
-            <button onclick="descriptografar()" id="descriptografar"><img src="./unlock-fill.svg" alt="" srcset=""> DESCRIPTOGRAFAR</button> <button onclick="copy()" id="copiar"><img src="./clipboard2.svg" alt="" srcset="">COPIAR ULTIMA RESPOSTA</button>
+
+            <button onclick="descriptografar()" id="descriptografar"><img src="./unlock-fill.svg" alt="" srcset=""> DESCRIPTOGRAFAR</button>
+
+            <button onclick="history()" id="copiar"><img src="./clipboard2.svg" alt="" srcset="">Historico</button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeHistory()">
+                    &times;
+                </span>
+                <div id="his">
+                    
+                </div>
+                <button class="copiar" onclick="copy()">Copiar última solicitação</button>
+            </div>
         </div>
     </main>
     <footer>
         <p>João Vitor Machado &copy</p>
-        
     </footer>
     
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
